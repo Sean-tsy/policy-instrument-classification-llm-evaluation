@@ -41,16 +41,18 @@ The goal is to quantify how different types of policy instruments (regulatory, i
 
 
 
-## Notebooks
-- `notebooks/01_load_and_clean.ipynb` – Load `.docx` files and clean text  
-- `notebooks/02_tokenize_and_tfidf.ipynb` – Tokenization & TF-IDF  
-- `notebooks/03_classify_policy_instruments.ipynb` – Rule-based classification  
-- `notebooks/04_visualization.ipynb` – Trend plots & export for Power BI  
+## Notebook
+- `policy_nlp.ipynb` – Complete workflow for loading policy documents, preprocessing text, generating TF-IDF features, classifying policy instruments, and exporting analysis outputs.
 
 ## Example Outputs
-- `results/policy_clean.csv` – Cleaned and tokenized texts
-- `results/policy_tfidf.csv` – TF-IDF matrix with metadata
-- `results/year_tool_counts.csv` – Year × policy instrument statistics
+
+### Classification Output
+- `output/classify/policy_with_labels.csv` – Policy documents with assigned instrument categories  
+- `output/classify/policy_tfidf.csv` – TF-IDF matrix merged with document metadata  
+
+### Visualization Data
+- `output/visual/year_tool_counts.csv` – Annual counts of policy instrument types  
+- `output/visual/county_tool_counts.csv` – County-level comparison of policy instrument types
 
 ## How to Run
 1. Clone the repository:
